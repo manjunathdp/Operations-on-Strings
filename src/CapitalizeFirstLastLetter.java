@@ -11,8 +11,8 @@ public class CapitalizeFirstLastLetter {
     public static void capitalize(String s) {
         String[] words = s.split(" ");
         for (String word : words) {
-            if(word.length()==1)
-                System.out.print(word.toUpperCase()+" ");
+            if (word.length() == 1)
+                System.out.print(word.toUpperCase() + " ");
             else
                 System.out.print(word.toUpperCase().charAt(0) + word.substring(1, word.length() - 1) + word.toUpperCase().charAt(word.length() - 1) + " ");
         }
