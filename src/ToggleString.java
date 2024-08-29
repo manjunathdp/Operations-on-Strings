@@ -13,12 +13,9 @@ public class ToggleString {
         StringBuilder s1 = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             if (Character.isAlphabetic(s.charAt(i))) {
-                if (Character.isUpperCase(s.charAt(i)))
-                    s1.append(Character.toLowerCase(s.charAt(i)));
-                else
-                    s1.append(Character.toUpperCase(s.charAt(i)));
-            } else
-                s1.append(s.charAt(i));
+                if (Character.isUpperCase(s.charAt(i))) s1.append(Character.toLowerCase(s.charAt(i)));
+                else s1.append(Character.toUpperCase(s.charAt(i)));
+            } else s1.append(s.charAt(i));
         }
         return s1.toString();
     }
